@@ -1,0 +1,39 @@
+<odoo>
+	<data>
+		<template 
+			id="vw_dark_mode_assets_backend"
+			name="VW Dark Mode Backend Theme Assets" 
+			inherit_id="web.assets_backend">
+			<xpath expr=".">
+				<link rel="stylesheet"
+					href="/vw_theme_dark_mode/static/src/scss/theme_accent.scss" />
+				<link rel="stylesheet"
+					href="/vw_theme_dark_mode/static/src/scss/navigation_bar.scss" />
+				<link rel="stylesheet"
+					href="/vw_theme_dark_mode/static/src/scss/datetimepicker.scss" />
+				<link rel="stylesheet"
+					href="/vw_theme_dark_mode/static/src/scss/theme.scss" />
+				<link rel="stylesheet"
+					href="/vw_theme_dark_mode/static/src/scss/sidebar.scss" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap"
+					rel="stylesheet" />
+			</xpath>
+		</template>
+		<template 
+			id="vw_dark_mode_assets_frontend"
+			name="VW Dark Mode Front Theme Assets" 
+			inherit_id="web.assets_frontend">
+			<xpath 
+				expr="//link[last()]" 
+				position="after">
+				<link 
+					rel="stylesheet"
+					href="/vw_theme_dark_mode/static/src/scss/login.scss" />
+				<link
+					rel="stylesheet" 
+					href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap"/>
+			</xpath>
+		</template>
+	</data>
+</odoo>
