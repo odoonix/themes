@@ -1,0 +1,11 @@
+# sphinx build directories
+_build/
+
+# dotfiles
+.*
+!.gitignore
+!.github
+!.mailmap
+# compiled python files
+*.py[co]
+__pycache__/
