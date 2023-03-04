@@ -41,13 +41,13 @@ $o-gray-900: #212529;
 
 $o-community-color: #00aeef;
 $o-enterprise-color: #808285;
-$o-enterprise-primary-color: #017e84;
+$o-enterprise-primary-color: #a2a5a5;
 
 $o-brand-odoo: $o-community-color ;
 $o-brand-primary: $o-community-color ;
 
-$o-brand-secondary: #808285;
-$o-brand-lightsecondary: $o-gray-100 ;
+$o-brand-secondary: #f2f4f8;
+$o-brand-lightsecondary: $o-gray-400 ;
 
 $o-success: #28a745;
 $o-info: #17a2b8;
@@ -67,7 +67,7 @@ $o-opacity-disabled: .5;
 $o-opacity-muted: .76;
 
 $o-font-family-sans-serif: o-add-unicode-support-font($o-system-fonts);
-$o-font-family-monospace: o-add-unicode-support-font((SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace));
+$o-font-family-monospace: o-add-unicode-support-font(("Yekan Bakh Fa 04",SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace));
 
 $o-headings-font-family: o-add-unicode-support-font(("SF Pro Display", $o-system-fonts));
 
@@ -183,7 +183,7 @@ $o-border-radius-sm: .2rem;
 $o-touch-btn-padding: 7px 14px;
 
 // Buttons
-$o-btn-secondary-bg: $o-white ;
+$o-btn-secondary-bg: $o-gray-500 ;
 $o-btn-secondary-hover-bg: $o-gray-100 ;
 $o-btn-secondary-hover-border: $o-gray-200 ;
 
