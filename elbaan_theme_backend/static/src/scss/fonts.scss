@@ -12,4 +12,15 @@
          url("https://cdn.viraweb123.ir/api/v2/cdn/libs/YekanBakh@2020/Fa/Yekan Bakh Fa 08 Fat.ttf") format("truetype");
   }
   
-  
+.o_phone_content a.o_form_uri {
+     direction: ltr /* rtl:ignore */;
+}
+.o_cell .o_field_widget .o_field_char .oe_inline{
+     direction: ltr /* rtl:ignore */;
+}
+#recipient_single_number_itf {
+     direction: ltr /* rtl:ignore */;
+     }
+td[name="contact_no"] {
+     direction: ltr /* rtl:ignore */;
+     }         
