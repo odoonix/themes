@@ -192,14 +192,14 @@ $o-btn-light-border: $o-btn-light-bg ;
 $o-btn-light-background-hover: $o-gray-100 ;
 
 //create image background fixed bottom of form page
-.o_form_sheet_bg{
+/*.o_form_sheet_bg{
     background-image: url("background.png");
     background-position: fixed; 
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: bottom left; 
  
-}
+}*/
 //create image background fixed bottom of all page
 /*.o_content{
     background-image: url("background.png");
@@ -225,6 +225,7 @@ $o-btn-light-background-hover: $o-gray-100 ;
 .fa-clock-o{
     color: #000000;
 }
+//company and user text color in menu
 .oe_topbar_name{
     color: #000000;
 }
