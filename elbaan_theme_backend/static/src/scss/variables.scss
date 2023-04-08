@@ -190,3 +190,38 @@ $o-btn-secondary-hover-border: $o-gray-200 ;
 $o-btn-light-bg: $o-white ;
 $o-btn-light-border: $o-btn-light-bg ;
 $o-btn-light-background-hover: $o-gray-100 ;
+
+//create image background fixed bottom of form page
+.o_form_sheet_bg{
+    background-image: url("background.png");
+    background-position: fixed; 
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: bottom left; 
+ 
+}
+//create image background fixed bottom of all page
+.o_content{
+    background-image: url("background.png");
+    background-position: fixed; 
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: bottom left; 
+}
+//change menu icon with font awsome and change it color
+.oi-apps::before {
+    font-family: FontAwesome;
+    content: "\f17a";
+    color: #0a0a0a;
+    
+}
+//create a color for fa icons
+.fa-bug{
+    color: #000000;
+}
+.fa-comments{
+    color: #000000;
+}
+.fa-clock-o{
+    color: #000000;
+}
