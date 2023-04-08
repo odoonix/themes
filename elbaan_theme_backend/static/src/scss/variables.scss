@@ -201,13 +201,13 @@ $o-btn-light-background-hover: $o-gray-100 ;
  
 }
 //create image background fixed bottom of all page
-.o_content{
+/*.o_content{
     background-image: url("background.png");
     background-position: fixed; 
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: bottom left; 
-}
+}*/
 //change menu icon with font awsome and change it color
 .oi-apps::before {
     font-family: FontAwesome;
