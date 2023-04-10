@@ -230,6 +230,9 @@ $o-btn-light-background-hover: $o-gray-100 ;
     color: #000000;
 }
 //directions for persian language
+.o_phone_content{
+    direction: ltr /* rtl:ignore */;
+}
 .o_phone_content a.o_form_uri {
     direction: ltr /* rtl:ignore */;
 }
@@ -242,3 +245,7 @@ $o-btn-light-background-hover: $o-gray-100 ;
 td[name="contact_no"] {
     direction: ltr /* rtl:ignore */;
     }         
+.o_field_phone_sms{
+    direction: ltr /* rtl:ignore */;
+}
+
