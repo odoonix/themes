@@ -1,0 +1,255 @@
+///
+/// This file regroups the variables that style odoo components.
+/// They are available in every asset bundle.
+///
+
+// Color-scheme
+$o-webclient-color-scheme: bright;
+
+// Font sizes
+$o-root-font-size: 12px;
+$o-font-size-base: 13rem * (1px / $o-root-font-size);
+$o-font-size-base-touch: 15px;
+$o-line-height-base: 1.5; // This is BS default
+
+// Global sans-serif fonts stack, defined here as we need to process
+// it before actually using it (to add more unicode support with the special
+// Odoo font for example). Adding unicode support is not done directly here as
+// this font can be used by the website where the unicode support is already
+// automatically added.
+$o-system-fonts: (
+    "Yekan Bakh Fa 04",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+);
+
+// Colors
+// This is BS default
+$o-white: #FFFFFF;
+$o-black: #000000;
+
+$o-gray-100: #f8f9fa;
+$o-gray-200: #e9ecef;
+$o-gray-300: #dee2e6;
+$o-gray-400: #ced4da;
+$o-gray-500: #adb5bd;
+$o-gray-600: #6c757d;
+$o-gray-700: #495057;
+$o-gray-800: #343a40;
+$o-gray-900: #212529;
+
+$o-community-color: #7000ef;
+$o-enterprise-color: #808285;
+$o-enterprise-primary-color: #a2a5a5;
+
+$o-brand-odoo: $o-community-color ;
+$o-brand-primary: $o-community-color ;
+
+$o-brand-secondary: #f2f4f8;
+$o-brand-lightsecondary: $o-gray-400 ;
+
+$o-success: #28a745;
+$o-info: #17a2b8;
+$o-warning: #ffac00;
+$o-danger: #dc3545;
+
+// Fine-tune contextual text colors.
+$o-theme-text-colors: (
+    "success": #008818,
+    "info": #0180a5,
+    "warning": #9a6b01,
+    "danger": #d23f3a,
+    "odoo": $o-brand-odoo,
+    );
+
+$o-opacity-disabled: .5;
+$o-opacity-muted: .76;
+
+$o-font-family-sans-serif: o-add-unicode-support-font($o-system-fonts);
+$o-font-family-monospace: o-add-unicode-support-font(("Yekan Bakh Fa 04",SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace));
+
+$o-headings-font-family: o-add-unicode-support-font(("SF Pro Display", $o-system-fonts));
+
+$o-main-text-color: $o-gray-700 ;
+$o-main-bg-color: #f0eeee;
+$o-main-color-muted: rgba($o-main-text-color, $o-opacity-muted);
+$o-main-headings-color: $o-gray-900 ;
+$o-main-link-color: darken($o-brand-primary, 5%);
+$o-main-favorite-color: #f3cc00;
+$o-main-code-color: #d2317b;
+
+$o-view-background-color: white;
+$o-shadow-color: #303030;
+
+$o-form-lightsecondary: #ccc;
+
+$o-list-footer-bg-color: #eee;
+$o-list-footer-font-weight: bold;
+
+$o-tooltip-background-color: $o-view-background-color ;
+$o-tooltip-color: $o-main-text-color ;
+$o-tooltip-arrow-color: white;
+$o-tooltip-text-color: $o-main-text-color ;
+$o-tooltip-title-text-color: $o-main-headings-color ;
+$o-tooltip-title-background-color: $o-view-background-color ;
+
+// Components (BS)
+
+$o-border-color: $o-gray-300 ;
+
+// Forms
+
+// o-inputs
+$o-input-padding-y: 2px;
+$o-input-padding-x: 4px;
+
+$o-input-border-required: $o-brand-primary ;
+
+// Layout
+//
+// Extension of BS4. This is not redefining the BS4 variable directly as we only
+// need the extra ones for media queries (not creating new breakpoint classes).
+// Note: default BS4 values are hardcoded here while it should be possible to
+// merge with the default BS variable (but we would have to take care of
+// ordering & cie).
+$o-extra-grid-breakpoints: (
+    xs: 0,
+    vsm: 475px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1534px,
+    );
+$o-form-group-cols: 12;
+$o-form-spacing-unit: 5px;
+$o-horizontal-padding: 16px;
+$o-innergroup-rpadding: 45px;
+$o-dropdown-hpadding: 20px;
+$o-dropdown-vpadding: 3px;
+$o-dropdown-box-shadow: 0 1rem 1.1rem rgba(#000, .1);
+
+$o-sheet-vpadding: 24px;
+
+$o-statbutton-height: 44px;
+$o-statbutton-vpadding: 0px;
+$o-statbutton-spacing: 6px;
+
+$o-modal-lg: 980px;
+$o-modal-md: 650px;
+
+// Needed for having no spacing between sheet and mail body in mass_mailing:
+// Different required cancel paddings between web and web_enterprise
+$o-sheet-cancel-tpadding: 0px;
+
+$o-avatar-size: 90px;
+
+$o-statusbar-height: 33px;
+
+$o-label-font-size-factor: 0.8;
+
+
+// == List group
+
+$o-list-group-active-color: $o-gray-900 ;
+$o-list-group-active-bg: lighten(saturate(adjust-hue($o-info, 15), 1.8), 50);
+
+
+// == Badges
+
+// Define a minimum width. This value is arbitrary and strictly font-related.
+$o-badge-min-width: 2.5ch;
+
+$o-nb-calendar-colors: 24;
+
+$o-base-settings-mobile-tabs-height: 40px;
+$o-base-settings-mobile-tabs-overflow-gap: 3%;
+
+$o-cp-breadcrumb-height: 30px;
+
+$o-cp-button-sm-no-border-padding: 0.4rem;
+
+$o-datepicker-week-color: #8f8f8f;
+
+$o-card-body-bg-opacity: 0.9;
+
+// Border-radius
+$o-border-radius: .25rem;
+$o-border-radius-lg: .6rem;
+$o-border-radius-sm: .2rem;
+
+// touch
+$o-touch-btn-padding: 7px 14px;
+
+// Buttons
+$o-btn-secondary-bg: $o-gray-500 ;
+$o-btn-secondary-hover-bg: $o-gray-100 ;
+$o-btn-secondary-hover-border: $o-gray-200 ;
+
+$o-btn-light-bg: $o-white ;
+$o-btn-light-border: $o-btn-light-bg ;
+$o-btn-light-background-hover: $o-gray-100 ;
+
+//create image background fixed bottom of form page
+/*.o_form_sheet_bg{
+    background-image: url("background.png");
+    background-position: fixed; 
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: bottom left; 
+ 
+}*/
+//create image background fixed bottom of all page
+/*.o_content{
+    background-image: url("background.png");
+    background-position: fixed; 
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: bottom left; 
+}*/
+//change menu icon with font awsome and change it color
+.oi-apps::before {
+    font-family: FontAwesome;
+    content: "\f17a";
+    color: #0a0a0a;
+    
+}
+//create a color for fa icons
+.fa-bug{
+    color: #000000;
+}
+.fa-comments{
+    color: #000000;
+}
+.fa-clock-o{
+    color: #000000;
+}
+//company and user text color in menu
+.oe_topbar_name{
+    color: #000000;
+}
+//directions for persian language
+.o_phone_content{
+    direction: ltr /* rtl:ignore */;
+}
+.o_phone_content a.o_form_uri {
+    direction: ltr /* rtl:ignore */;
+}
+.o_cell .o_field_widget .o_field_char .oe_inline{
+    direction: ltr /* rtl:ignore */;
+}
+#recipient_single_number_itf {
+    direction: ltr /* rtl:ignore */;
+    }
+td[name="contact_no"] {
+    direction: ltr /* rtl:ignore */;
+    }         
+.o_field_phone_sms{
+    direction: ltr /* rtl:ignore */;
+}
+//Mouse over the nav bar items text they go to this color and 
+.o_main_navbar .o_nav_entry:hover, .o_main_navbar .dropdown-toggle:hover, .o_main_navbar .o_menu_brand:hover, .o_main_navbar .o_menu_systray > * > a:hover, .o_main_navbar .o_menu_systray > * > .dropdown > a:hover, .o_main_navbar .o_menu_systray > * > button:hover, .o_main_navbar .o_menu_systray > * > label:hover, .o_main_navbar .o_nav_entry:focus, .o_main_navbar .dropdown-toggle:focus, .o_main_navbar .o_menu_brand:focus, .o_main_navbar .o_menu_systray > * > a:focus, .o_main_navbar .o_menu_systray > * > .dropdown > a:focus, .o_main_navbar .o_menu_systray > * > button:focus, .o_main_navbar .o_menu_systray > * > label:focus, .o_main_navbar .focus.o_nav_entry, .o_main_navbar .focus.dropdown-toggle, .o_main_navbar .focus.o_menu_brand, .o_main_navbar .o_menu_systray > * > a.focus, .o_main_navbar .o_menu_systray > * > .dropdown > a.focus, .o_main_navbar .o_menu_systray > * > button.focus, .o_main_navbar .o_menu_systray > * > label.focus {
+    color: #000000;
+    transition: 1.5s;
+  }
