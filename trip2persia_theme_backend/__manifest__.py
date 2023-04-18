@@ -1,7 +1,7 @@
 {
     'name': 'Trip2Persia Theme',
     'version': '16.0.1.0',
-    'category': 'Theme/Creative',
+    'category': 'Themes',
     'depends': ['base', 'web','vw_main_theme_backend'],
     'author': 'ViraWeb123',
     'company': 'ViraWeb123',
