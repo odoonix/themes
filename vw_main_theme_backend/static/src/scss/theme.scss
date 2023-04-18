@@ -1,0 +1,43 @@
+.Your_custom_class {
+    height: 80px; 
+    width: 80px; overflow:hidden;
+}
+.openerp .oe_form .oe_form_field_image img {
+    max-width:80px; 
+    max-height: 80px;
+}
+/*directions for persian language*/
+#recipient_single_number_itf {
+     /* rtl:ignore */
+    direction: ltr;
+}
+.o_field_cell .o_list_char{
+     /* rtl:ignore */
+    direction: ltr;
+}
+
+
+.o_phone_content a .o_form_uri {
+     /* rtl:ignore */
+    direction: ltr;
+}
+.o_cell .o_field_widget .o_field_char .oe_inline{
+     /* rtl:ignore */
+    direction: ltr;
+}
+#recipient_single_number_itf {
+     /* rtl:ignore */
+    direction: ltr;
+    }
+td[name="contact_no"] {
+     /* rtl:ignore */
+    direction: ltr;
+    }         
+.o_field_phone_sms{
+     /* rtl:ignore */
+    direction: ltr;
+}
+.o_form_view .o_form_uri {
+    /* rtl:ignore */
+	direction: ltr; 
+}
