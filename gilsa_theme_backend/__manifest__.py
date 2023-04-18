@@ -12,11 +12,12 @@
     'license': 'LGPL-3',
     'assets': {
         'web._assets_primary_variables': [
-            '/gilsa_theme_backend/static/src/scss/fonts.scss',
+            'gilsa_theme_backend/static/src/scss/fonts.scss',
             (
                'before',
                'web/static/src/scss/primary_variables.scss',
-               '/gilsa_theme_backend/static/src/scss/variables.scss',
+               'gilsa_theme_backend/static/src/scss/variables.scss',
+               'gilsa_theme_backend/static/src/css/theme.css',
             ),
         ],
     },
