@@ -15,12 +15,6 @@
      /* rtl:ignore */
     direction: ltr;
 }
-
-
-.o_phone_content a .o_form_uri {
-     /* rtl:ignore */
-    direction: ltr;
-}
 .o_cell .o_field_widget .o_field_char .oe_inline{
      /* rtl:ignore */
     direction: ltr;
@@ -29,15 +23,16 @@
      /* rtl:ignore */
     direction: ltr;
     }
-td[name="contact_no"] {
-     /* rtl:ignore */
-    direction: ltr;
-    }         
+        
 .o_field_phone_sms{
      /* rtl:ignore */
     direction: ltr;
 }
-.o_form_view .o_form_uri {
+div>.o_phone_content>a.o_form_uri {
     /* rtl:ignore */
-	direction: ltr; 
+    direction: ltr;
+}
+td>div>.o_phone_content a.o_form_uri {
+    /* rtl:ignore */
+    direction: ltr;
 }
