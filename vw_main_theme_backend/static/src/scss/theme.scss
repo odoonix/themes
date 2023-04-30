@@ -36,3 +36,10 @@ td>div>.o_phone_content a.o_form_uri {
     /* rtl:ignore */
     direction: ltr;
 }
+
+.o_list_renderer .o_list_table tbody > tr > td:not(.o_list_record_selector).o_list_number {
+	text-align: left;
+}
+.text-end {
+	text-align: left !important;
+}
