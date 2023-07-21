@@ -4,11 +4,11 @@
 import { patch } from '@web/core/utils/patch';
 
 import { NavBar } from '@web/webclient/navbar/navbar';
-import { AppsMenu } from "@muk_web_theme/webclient/appsmenu/appsmenu";
-import { AppsSearch } from "@muk_web_theme/webclient/appssearch/appssearch";
-import { AppsBar } from '@muk_web_theme/webclient/appsbar/appsbar';
+import { AppsMenu } from "@trip2persia_theme_backend/webclient/appsmenu/appsmenu";
+import { AppsSearch } from "@trip2persia_theme_backend/webclient/appssearch/appssearch";
+import { AppsBar } from '@trip2persia_theme_backend/webclient/appsbar/appsbar';
 
-patch(NavBar.prototype, 'muk_web_theme.NavBar', {
+patch(NavBar.prototype, 'trip2persia_theme_backend.NavBar', {
 	getAppsMenuItems(apps) {
 		return apps.map((menu) => {
 			const appsMenuItem = {
@@ -37,7 +37,7 @@ patch(NavBar.prototype, 'muk_web_theme.NavBar', {
     },
 });
 
-patch(NavBar, 'muk_web_theme.NavBar', {
+patch(NavBar, 'trip2persia_theme_backend.NavBar', {
     components: {
         ...NavBar.components,
         AppsMenu,

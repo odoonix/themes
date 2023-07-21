@@ -19,7 +19,7 @@ class IrHttp(models.AbstractModel):
                 })
         result['pager_autoload_interval'] = int(
             self.env['ir.config_parameter'].sudo().get_param(
-                'muk_web_theme.autoload', default=30000
+                'trip2persia_theme_backend.autoload', default=30000
             )
         )
         return result

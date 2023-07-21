@@ -4,7 +4,7 @@ import { Component } from "@odoo/owl";
 export class AppsBar extends Component {}
 
 Object.assign(AppsBar, {
-    template: 'muk_web_theme.AppsBar',
+    template: 'trip2persia_theme_backend.AppsBar',
     props: {
     	apps: Array,
     },

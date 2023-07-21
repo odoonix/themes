@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 	<t 
-		t-name="muk_web_theme.AppsMenu" 
+		t-name="trip2persia_theme_backend.AppsMenu" 
 		t-inherit="web.Dropdown" 
 		t-inherit-mode="primary" 
 		owl="1"

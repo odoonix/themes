@@ -92,6 +92,6 @@ export class AppsSearch extends Component {
 }
 
 Object.assign(AppsSearch, {
-    template: 'muk_web_theme.AppsSearch',
+    template: 'trip2persia_theme_backend.AppsSearch',
 });
 

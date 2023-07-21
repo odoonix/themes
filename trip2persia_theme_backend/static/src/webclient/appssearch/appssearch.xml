@@ -2,7 +2,7 @@
 
 <templates xml:space="preserve">
 
-	<t t-name="muk_web_theme.AppsSearch" owl="1">
+	<t t-name="trip2persia_theme_backend.AppsSearch" owl="1">
 		<div
             class="mk_apps_search_container"
             t-att-class="state.hasResults ? 'mk_apps_search_active' : ''"

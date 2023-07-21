@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
-	<t t-name="muk_web_theme.AppsBar" owl="1">
+	<t t-name="trip2persia_theme_backend.AppsBar" owl="1">
 		<div class="mk_apps_sidebar_panel">
 			<div class="mk_apps_sidebar">
 				<ul class="mk_apps_sidebar_menu">
@@ -23,7 +23,7 @@
 			                	<img  
 			                		t-else="" 
 			                		class="mk_apps_sidebar_icon" 
-			                		src="/muk_web_theme/static/img/default_icon.png"
+			                		src="/trip2persia_theme_backend/static/img/default_icon.png"
 			                	/>
 						        <span class="mk_apps_sidebar_name">
 						            <t t-out="app.name"/>

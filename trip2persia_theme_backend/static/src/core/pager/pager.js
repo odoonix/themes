@@ -8,7 +8,7 @@ import { session } from "@web/session";
 
 import { Pager } from '@web/core/pager/pager';
 
-patch(Pager.prototype, 'muk_web_theme.Pager', {
+patch(Pager.prototype, 'trip2persia_theme_backend.Pager', {
 	setup() {
         this._super(...arguments);
         const autoLoad = browser.localStorage.getItem(

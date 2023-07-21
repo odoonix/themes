@@ -28,21 +28,21 @@
             (
                 'after', 
                 'web/static/src/scss/primary_variables.scss', 
-                'muk_web_theme/static/src/colors.scss'
+                'trip2persia_theme_backend/static/src/colors.scss'
             ),
         ],
         'web._assets_backend_helpers': [
-            'muk_web_theme/static/src/variables.scss',
-            'muk_web_theme/static/src/mixins.scss',
+            'trip2persia_theme_backend/static/src/variables.scss',
+            'trip2persia_theme_backend/static/src/mixins.scss',
         ],
         'web.assets_backend': [
-            'muk_web_theme/static/src/core/**/*.xml',
-            'muk_web_theme/static/src/core/**/*.scss',
-            'muk_web_theme/static/src/core/**/*.js',
-            'muk_web_theme/static/src/webclient/**/*.xml',
-            'muk_web_theme/static/src/webclient/**/*.scss',
-            'muk_web_theme/static/src/webclient/**/*.js',
-            'muk_web_theme/static/src/views/**/*.scss',
+            'trip2persia_theme_backend/static/src/core/**/*.xml',
+            'trip2persia_theme_backend/static/src/core/**/*.scss',
+            'trip2persia_theme_backend/static/src/core/**/*.js',
+            'trip2persia_theme_backend/static/src/webclient/**/*.xml',
+            'trip2persia_theme_backend/static/src/webclient/**/*.scss',
+            'trip2persia_theme_backend/static/src/webclient/**/*.js',
+            'trip2persia_theme_backend/static/src/views/**/*.scss',
         ],
     },
     'images': [
