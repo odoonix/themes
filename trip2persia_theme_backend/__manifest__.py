@@ -1,26 +1,56 @@
+
 {
-    'name': 'Trip2Persia Theme',
-    'version': '16.0.1.0',
-    'category': 'Themes/viraWeb123',
-    'depends': ['base', 'web','vw_main_theme_backend'],
-    'author': 'ViraWeb123',
-    'company': 'ViraWeb123',
-    'website': 'https://viraweb123.ir',
-    'description': "Trip2Persia Theme",
-    'data': [
+    'name': 'Trip2Persia Backend Theme', 
+    'summary': 'Odoo Community Backend Theme',
+    'version': '16.0.1.0.6', 
+    'category': 'Themes/Backend', 
+    'license': 'LGPL-3', 
+    'author': 'MuK IT',
+    'website': 'http://viraweb123.ir',
+    'contributors': [
+        'Mathias Markl <mathias.markl@mukit.at>',
     ],
-    'demo': [],
-    'installable': True,
-    'license': 'LGPL-3',
+    'depends': [
+        'base_setup',
+        'web_editor',
+        'mail',
+    ],
+    'excludes': [
+        'web_enterprise',
+    ],
+    'data': [
+        'templates/webclient.xml',
+        'views/res_config_settings.xml',
+        'views/res_users.xml',
+    ],
     'assets': {
         'web._assets_primary_variables': [
-            'trip2persia_theme_backend/static/src/scss/fonts.scss',
-            'trip2persia_theme_backend/static/src/scss/theme.scss',
             (
-               'before',
-               'web/static/src/scss/primary_variables.scss',
-               'trip2persia_theme_backend/static/src/scss/variables.scss',
+                'after', 
+                'web/static/src/scss/primary_variables.scss', 
+                'muk_web_theme/static/src/colors.scss'
             ),
         ],
+        'web._assets_backend_helpers': [
+            'muk_web_theme/static/src/variables.scss',
+            'muk_web_theme/static/src/mixins.scss',
+        ],
+        'web.assets_backend': [
+            'muk_web_theme/static/src/core/**/*.xml',
+            'muk_web_theme/static/src/core/**/*.scss',
+            'muk_web_theme/static/src/core/**/*.js',
+            'muk_web_theme/static/src/webclient/**/*.xml',
+            'muk_web_theme/static/src/webclient/**/*.scss',
+            'muk_web_theme/static/src/webclient/**/*.js',
+            'muk_web_theme/static/src/views/**/*.scss',
+        ],
     },
+    'images': [
+        'static/description/banner.png',
+        'static/description/theme_screenshot.png'
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'uninstall_hook': '_uninstall_cleanup',
 }
