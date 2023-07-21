@@ -32,6 +32,6 @@ class ResUsers(models.Model):
             ('large', 'Large')
         ], 
         string="Sidebar Type",
-        default='large',
+        default='invisible',
         required=True,
     )
