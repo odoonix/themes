@@ -25,6 +25,7 @@ $o-system-fonts: (
     sans-serif,
 );
 
+
 // Colors
 // This is BS default
 $o-white: #FFFFFF;
@@ -55,6 +56,9 @@ $o-info: #17a2b8;
 $o-warning: #ffac00;
 $o-danger: #dc3545;
 
+button.btn-secondary {
+      color: black; // Set text color to black
+  };
 // Fine-tune contextual text colors.
 $o-theme-text-colors: (
     "success": #008818,
