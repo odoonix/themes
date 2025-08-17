@@ -22,12 +22,12 @@ $o-system-fonts: (
     "Yekan Bakh Fa 08",
     "Liberation Sans",
     Arial,
-    sans-serif,
+    sans-serif
 );
 $o-community-color: #8a389b;
 // Colors
 // This is BS default
-$o-white: #FFFFFF;
+$o-white: #ffffff;
 $o-black: #000000;
 
 $o-gray-100: #f8f9fa;
@@ -40,15 +40,14 @@ $o-gray-700: #495057;
 $o-gray-800: #343a40;
 $o-gray-900: #212529;
 
-
 $o-enterprise-color: #808285;
 $o-enterprise-primary-color: #a2a5a5;
 
-$o-brand-odoo: $o-community-color ;
-$o-brand-primary: $o-community-color ;
+$o-brand-odoo: $o-community-color;
+$o-brand-primary: $o-community-color;
 
 $o-brand-secondary: #f2f4f8;
-$o-brand-lightsecondary: $o-gray-400 ;
+$o-brand-lightsecondary: $o-gray-400;
 
 $o-success: #28a745;
 $o-info: #17a2b8;
@@ -62,20 +61,33 @@ $o-theme-text-colors: (
     "warning": #9a6b01,
     "danger": #d23f3a,
     "odoo": $o-brand-odoo,
-    );
+);
 
-$o-opacity-disabled: .5;
-$o-opacity-muted: .76;
+$o-opacity-disabled: 0.5;
+$o-opacity-muted: 0.76;
 
 $o-font-family-sans-serif: o-add-unicode-support-font($o-system-fonts);
-$o-font-family-monospace: o-add-unicode-support-font(("Yekan Bakh Fa 04",SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace));
+$o-font-family-monospace: o-add-unicode-support-font(
+    (
+        "Yekan Bakh Fa 04",
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        "Liberation Mono",
+        "Courier New",
+        monospace
+    )
+);
 
-$o-headings-font-family: o-add-unicode-support-font(("SF Pro Display", $o-system-fonts));
+$o-headings-font-family: o-add-unicode-support-font(
+    ("SF Pro Display", $o-system-fonts)
+);
 
-$o-main-text-color: $o-gray-700 ;
+$o-main-text-color: $o-gray-700;
 $o-main-bg-color: #f0eeee;
 $o-main-color-muted: rgba($o-main-text-color, $o-opacity-muted);
-$o-main-headings-color: $o-gray-900 ;
+$o-main-headings-color: $o-gray-900;
 $o-main-link-color: darken($o-brand-primary, 5%);
 $o-main-favorite-color: #f3cc00;
 $o-main-code-color: #d2317b;
@@ -88,16 +100,16 @@ $o-form-lightsecondary: #ccc;
 $o-list-footer-bg-color: #eee;
 $o-list-footer-font-weight: bold;
 
-$o-tooltip-background-color: $o-view-background-color ;
-$o-tooltip-color: $o-main-text-color ;
+$o-tooltip-background-color: $o-view-background-color;
+$o-tooltip-color: $o-main-text-color;
 $o-tooltip-arrow-color: white;
-$o-tooltip-text-color: $o-main-text-color ;
-$o-tooltip-title-text-color: $o-main-headings-color ;
-$o-tooltip-title-background-color: $o-view-background-color ;
+$o-tooltip-text-color: $o-main-text-color;
+$o-tooltip-title-text-color: $o-main-headings-color;
+$o-tooltip-title-background-color: $o-view-background-color;
 
 // Components (BS)
 
-$o-border-color: $o-gray-300 ;
+$o-border-color: $o-gray-300;
 
 // Forms
 
@@ -105,7 +117,7 @@ $o-border-color: $o-gray-300 ;
 $o-input-padding-y: 2px;
 $o-input-padding-x: 4px;
 
-$o-input-border-required: $o-brand-primary ;
+$o-input-border-required: $o-brand-primary;
 
 // Layout
 //
@@ -122,14 +134,14 @@ $o-extra-grid-breakpoints: (
     lg: 992px,
     xl: 1200px,
     xxl: 1534px,
-    );
+);
 $o-form-group-cols: 12;
 $o-form-spacing-unit: 5px;
 $o-horizontal-padding: 16px;
 $o-innergroup-rpadding: 45px;
 $o-dropdown-hpadding: 20px;
 $o-dropdown-vpadding: 3px;
-$o-dropdown-box-shadow: 0 1rem 1.1rem rgba(#000, .1);
+$o-dropdown-box-shadow: 0 1rem 1.1rem rgba(#000, 0.1);
 
 $o-sheet-vpadding: 24px;
 
@@ -150,12 +162,10 @@ $o-statusbar-height: 33px;
 
 $o-label-font-size-factor: 0.8;
 
-
 // == List group
 
-$o-list-group-active-color: $o-gray-900 ;
+$o-list-group-active-color: $o-gray-900;
 $o-list-group-active-bg: lighten(saturate(adjust-hue($o-info, 15), 1.8), 50);
-
 
 // == Badges
 
@@ -176,19 +186,18 @@ $o-datepicker-week-color: #8f8f8f;
 $o-card-body-bg-opacity: 0.9;
 
 // Border-radius
-$o-border-radius: .25rem;
-$o-border-radius-lg: .6rem;
-$o-border-radius-sm: .2rem;
+$o-border-radius: 0.25rem;
+$o-border-radius-lg: 0.6rem;
+$o-border-radius-sm: 0.2rem;
 
 // touch
 $o-touch-btn-padding: 7px 14px;
 
 // Buttons
-$o-btn-secondary-bg: $o-gray-500 ;
-$o-btn-secondary-hover-bg: $o-gray-100 ;
-$o-btn-secondary-hover-border: $o-gray-200 ;
+$o-btn-secondary-bg: $o-gray-500;
+$o-btn-secondary-hover-bg: $o-gray-100;
+$o-btn-secondary-hover-border: $o-gray-200;
 
-$o-btn-light-bg: $o-white ;
-$o-btn-light-border: $o-btn-light-bg ;
-$o-btn-light-background-hover: $o-gray-100 ;
-
+$o-btn-light-bg: $o-white;
+$o-btn-light-border: $o-btn-light-bg;
+$o-btn-light-background-hover: $o-gray-100;

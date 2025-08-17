@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="res_users_preferences" model="ir.ui.view">
         <field name="name">res.users.preferences</field>
@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="base.view_users_form_simple_modif" />
         <field name="arch" type="xml">
              <xpath expr="//field[@name='tz_offset']" position="after">
-                <field name="sidebar_type" readonly="0"/>
+                <field name="sidebar_type" readonly="0" />
             </xpath>
         </field>
     </record>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
 
 	<t t-name="trip2persia_theme_backend.AppsSearch" owl="1">
@@ -23,17 +22,17 @@
             <div t-if="state.hasResults" class="mk_apps_search_menus">
 				<t t-foreach="state.results" t-as="menu" t-key="menu.id">
 					<a
-						t-att-style="menu.style ? menu.style : ''"
-	            		t-att-href="menu.href"
-            			t-att-data-menu-id="menu.id" 
-            			t-att-data-menu-xmlid="menu.xmlid" 
-            			t-att-data-action-id="menu.actionID"
-						t-on-click.prevent="() => menu.action()"
-						t-out="menu.name"
-            		/>
+                        t-att-style="menu.style ? menu.style : ''"
+                        t-att-href="menu.href"
+                        t-att-data-menu-id="menu.id"
+                        t-att-data-menu-xmlid="menu.xmlid"
+                        t-att-data-action-id="menu.actionID"
+                        t-on-click.prevent="() => menu.action()"
+                        t-out="menu.name"
+                    />
                 </t>
             </div>
         </div>
 	</t>
-	
+
 </templates>

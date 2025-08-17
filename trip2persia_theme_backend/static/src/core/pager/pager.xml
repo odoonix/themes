@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-
 <template>
 
     <t
@@ -11,26 +9,26 @@
     >
         <xpath expr="//span[hasclass('o_pager_counter')]" position="before">
             <button
-            	t-if="props.withAccessKey and !env.isSmall"
-	            type="button"
-		        tabindex="-1" 
-		        aria-label="Refresh" 
-	            data-hotkey="r"
-	            class="fa fa-refresh btn btn-secondary rounded me-1 mk_pager_refresh"
-	            t-att-class="this.autoLoadState.active ? 'mk_active_autoload' : ''"
-	            t-att-data-tooltip-info="this.getAutoloadTooltip()"
-	            t-att-data-tooltip-template="'trip2persia_theme_backend.RefreshTooltip'"
-	            t-on-click.stop="() => this.navigate(0)"
-	            t-on-dblclick.stop="() => this.toggleAutoLoad()"
-	        />
+                t-if="props.withAccessKey and !env.isSmall"
+                type="button"
+                tabindex="-1"
+                aria-label="Refresh"
+                data-hotkey="r"
+                class="fa fa-refresh btn btn-secondary rounded me-1 mk_pager_refresh"
+                t-att-class="this.autoLoadState.active ? 'mk_active_autoload' : ''"
+                t-att-data-tooltip-info="this.getAutoloadTooltip()"
+                t-att-data-tooltip-template="'trip2persia_theme_backend.RefreshTooltip'"
+                t-on-click.stop="() => this.navigate(0)"
+                t-on-dblclick.stop="() => this.toggleAutoLoad()"
+            />
         </xpath>
     </t>
-    
+
     <t t-name="trip2persia_theme_backend.RefreshTooltip" owl="1">
         <div>
         	<p t-if="autoload" class="m-0">
 	            <t t-if="active">
-		            Auto Refresh (<span t-out="interval"/> Seconds)
+		            Auto Refresh (<span t-out="interval" /> Seconds)
 		        </t>
 		        <t t-else="">
 		        	<p class="m-0">Single Click: Refresh View</li>
@@ -42,6 +40,5 @@
             </p>
         </div>
     </t>
-    
-</template>
 
+</template>

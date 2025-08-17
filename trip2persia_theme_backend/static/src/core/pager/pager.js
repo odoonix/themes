@@ -1,79 +1,66 @@
 /** @odoo-module */
 
+import {useState, onWillUnmount} from "@odoo/owl";
+import {browser} from "@web/core/browser/browser";
+import {patch} from "@web/core/utils/patch";
+import {session} from "@web/session";
 
-import { useState, onWillUnmount } from "@odoo/owl";
-import { browser } from "@web/core/browser/browser";
-import { patch } from '@web/core/utils/patch';
-import { session } from "@web/session";
+import {Pager} from "@web/core/pager/pager";
 
-import { Pager } from '@web/core/pager/pager';
-
-patch(Pager.prototype, 'trip2persia_theme_backend.Pager', {
-	setup() {
+patch(Pager.prototype, "trip2persia_theme_backend.Pager", {
+    setup() {
         this._super(...arguments);
-        const autoLoad = browser.localStorage.getItem(
-        	this.getAutoLoadStorageKey()
-        )
+        const autoLoad = browser.localStorage.getItem(this.getAutoLoadStorageKey());
         this.autoLoadInterval = false;
         this.autoLoadState = useState({
-        	active: autoLoad,
+            active: autoLoad,
         });
         if (autoLoad) {
-        	this.setAutoLoad();
+            this.setAutoLoad();
         }
         onWillUnmount(() => {
             this.clearAutoLoad();
         });
     },
     checkAutoLoadAvailability() {
-    	return ['kanban', 'list'].includes(
-    		this.env.config.viewType
-    	);
+        return ["kanban", "list"].includes(this.env.config.viewType);
     },
     getAutoLoadStorageKey() {
-    	return (
-    		'pager_autoload:' +
-    		this.env.config.actionId + 
-    		',' +
-    		this.env.config.viewId
-    	);
+        return (
+            "pager_autoload:" + this.env.config.actionId + "," + this.env.config.viewId
+        );
     },
     getAutoLoadIntervalTimeout() {
-    	return session.pager_autoload_interval || 30000;
+        return session.pager_autoload_interval || 30000;
     },
     getAutoloadTooltip() {
-    	return JSON.stringify({
-    		active: this.autoLoadState.active,
-    		interval: this.getAutoLoadIntervalTimeout() / 1000,
-    		autoload: this.checkAutoLoadAvailability(),
-    	});
+        return JSON.stringify({
+            active: this.autoLoadState.active,
+            interval: this.getAutoLoadIntervalTimeout() / 1000,
+            autoload: this.checkAutoLoadAvailability(),
+        });
     },
     setAutoLoad() {
-    	this.autoLoadInterval = browser.setInterval(
-	    	() => { this.navigate(0); }, 
-	    	this.getAutoLoadIntervalTimeout()
-    	);
-    	if (this.env.config.actionId) {
-    		browser.localStorage.setItem(
-	            this.getAutoLoadStorageKey(), true
-	        );
-    	}
+        this.autoLoadInterval = browser.setInterval(() => {
+            this.navigate(0);
+        }, this.getAutoLoadIntervalTimeout());
+        if (this.env.config.actionId) {
+            browser.localStorage.setItem(this.getAutoLoadStorageKey(), true);
+        }
     },
     clearAutoLoad() {
-    	if (this.autoLoadInterval) {
-    		browser.clearInterval(this.autoLoadInterval);
-    	}
+        if (this.autoLoadInterval) {
+            browser.clearInterval(this.autoLoadInterval);
+        }
     },
     toggleAutoLoad() {
-    	this.clearAutoLoad();
-    	browser.localStorage.removeItem(
-            this.getAutoLoadStorageKey()
-        );
-    	if (this.checkAutoLoadAvailability()) {
-        	this.autoLoadState.active = !this.autoLoadState.active;
-        	if (this.autoLoadState.active) {
-        		this.setAutoLoad();
-        	}
-    	}
+        this.clearAutoLoad();
+        browser.localStorage.removeItem(this.getAutoLoadStorageKey());
+        if (this.checkAutoLoadAvailability()) {
+            this.autoLoadState.active = !this.autoLoadState.active;
+            if (this.autoLoadState.active) {
+                this.setAutoLoad();
+            }
+        }
     },
 });
