@@ -1,6 +1,6 @@
 {
     "name": "ViraWeb123 Theme",
-    "version": "16.0.1.0",
+    "version": "17.0.1.0",
     "category": "Themes/viraWeb123",
     "depends": ["base", "web"],
     "author": "ViraWeb123",

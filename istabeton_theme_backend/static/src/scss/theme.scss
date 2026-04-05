@@ -1,7 +1,7 @@
 /*change menu icon with font awsome and change it color*/
 .oi-apps::before {
     font-family: FontAwesome;
-    content: "\f17a";
+    content: "\f17a" !important;
 }
 /*create a color for fa icons*/
 .fa-bug {
