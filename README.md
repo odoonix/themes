@@ -1,8 +1,8 @@
 
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
-[![Pre-commit Status](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/pre-commit.yml?query=branch%3A16.0)
-[![Build Status](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/test.yml?query=branch%3A16.0)
-[![codecov](https://codecov.io/gh/moonsunsoft/TODO, update the description in coper ansere file/branch/16.0/graph/badge.svg)](https://codecov.io/gh/moonsunsoft/TODO, update the description in coper ansere file)
+[![Pre-commit Status](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/moonsunsoft/TODO, update the description in coper ansere file/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/moonsunsoft/TODO, update the description in coper ansere file/branch/18.0/graph/badge.svg)](https://codecov.io/gh/moonsunsoft/TODO, update the description in coper ansere file)
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->

@@ -1,8 +1,8 @@
 {
     "name": "IstaBeton Theme",
-    "version": "16.0.1.0",
+    "version": "18.0.1.0",
     "category": "Themes/viraWeb123",
-    "depends": ["base", "web", "vw_main_theme_backend"],
+    "depends": ["base", "web", "main_theme_backend"],
     "author": "ViraWeb123",
     "company": "ViraWeb123",
     "website": "https://viraweb123.ir",

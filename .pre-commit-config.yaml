@@ -52,7 +52,7 @@ repos:
       - id: oca-gen-addon-readme
         args:
           - --addons-dir=.
-          - --branch=16.0
+          - --branch=18.0
           - --org-name=moonsunsoft
           - --repo-name=TODO, update the description in coper ansere file
           - --if-source-changed

@@ -14,7 +14,7 @@ github_enable_stale_action: true
 github_enforce_dev_status_compatibility: true
 include_wkhtmltopdf: false
 odoo_test_flavor: Both
-odoo_version: 16.0
+odoo_version: 18.0
 org_name: MoonSun PTY LTD
 org_slug: moonsunsoft
 rebel_module_groups: []
